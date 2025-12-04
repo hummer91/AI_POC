@@ -1,0 +1,133 @@
+{
+  "ingredients": {
+    "차전자피": {
+      "price_per_kg": 8500,
+      "category": "주원료",
+      "description": "식이섬유 원료"
+    },
+    "결명자추출분말": {
+      "price_per_kg": 16500,
+      "category": "부원료",
+      "description": "결명자 추출물"
+    },
+    "비타민C": {
+      "price_per_kg": 6500,
+      "category": "부원료",
+      "description": "아스코르브산"
+    },
+    "결정셀룰로스": {
+      "price_per_kg": 3500,
+      "category": "부형제",
+      "description": "충전제, 결합제"
+    },
+    "정제포도당": {
+      "price_per_kg": 2500,
+      "category": "부형제",
+      "description": "감미료, 부형제"
+    },
+    "이산화규소": {
+      "price_per_kg": 8000,
+      "category": "부형제",
+      "description": "유동화제, 고결방지제"
+    },
+    "스테아린산마그네슘": {
+      "price_per_kg": 6000,
+      "category": "부형제",
+      "description": "활택제"
+    },
+    "탄산마그네슘": {
+      "price_per_kg": 4000,
+      "category": "부형제",
+      "description": "부형제"
+    },
+    "건조효모": {
+      "price_per_kg": 12000,
+      "category": "부원료",
+      "description": "영양강화제"
+    },
+    "말토덱스트린": {
+      "price_per_kg": 3000,
+      "category": "부형제",
+      "description": "부형제, 증량제"
+    }
+  },
+  "processing_costs": {
+    "제환비": {
+      "unit": "원/kg",
+      "price": 11000,
+      "description": "분말을 환 형태로 성형"
+    },
+    "분말충진비": {
+      "unit": "원/kg",
+      "price": 8000,
+      "description": "분말 스틱 충진"
+    },
+    "정제비": {
+      "unit": "원/kg",
+      "price": 15000,
+      "description": "정제 타정"
+    },
+    "과립비": {
+      "unit": "원/kg",
+      "price": 12000,
+      "description": "과립 성형"
+    }
+  },
+  "packaging_costs": {
+    "스틱포장": {
+      "unit": "원/포",
+      "price": 35,
+      "description": "스틱 포장재"
+    },
+    "단박스": {
+      "unit": "원/박스",
+      "price": 400,
+      "description": "단박스 포장"
+    },
+    "병포장": {
+      "unit": "원/병",
+      "price": 800,
+      "description": "플라스틱 병 포장"
+    }
+  },
+  "moq_rules": {
+    "default_moq_boxes": 2000,
+    "default_pouch_per_box": 30,
+    "default_gram_per_pouch": 5,
+    "min_production_kg": 300
+  },
+  "product_types": {
+    "환": {
+      "processing_cost_key": "제환비",
+      "description": "분말을 환 형태로 성형"
+    },
+    "분말": {
+      "processing_cost_key": "분말충진비",
+      "description": "분말 스틱 형태"
+    },
+    "정제": {
+      "processing_cost_key": "정제비",
+      "description": "정제 타정"
+    },
+    "과립": {
+      "processing_cost_key": "과립비",
+      "description": "과립 성형"
+    }
+  },
+  "reference_products": {
+    "차전자피": [
+      {
+        "name": "종근당건강 차전자피 환",
+        "ratio": {"차전자피": 95, "결정셀룰로스": 5}
+      },
+      {
+        "name": "홍진경 차전자피 환",
+        "ratio": {"차전자피": 70, "정제포도당": 20, "탄산마그네슘": 10}
+      },
+      {
+        "name": "차전자피 100% 환",
+        "ratio": {"차전자피": 100}
+      }
+    ]
+  }
+}

@@ -3,13 +3,19 @@
 """
 
 import os
+from pathlib import Path
 from dotenv import load_dotenv
 
 # .env 파일 로드
 load_dotenv()
 
+# 경로 설정
+BASE_DIR = Path(__file__).parent.parent
+DATA_DIR = BASE_DIR / "data"
+INGREDIENT_DB_PATH = DATA_DIR / "ingredient_db.json"
+
 # 앱 설정
-APP_TITLE = "AI POC - 건강기능식품 검색 챗봇"
+APP_TITLE = "AI POC - 건강기능식품 OEM 견적 챗봇"
 APP_ICON = "🔬"
 
 # 검색 설정
